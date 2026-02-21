@@ -109,6 +109,8 @@ export default function CertificationSection() {
                             <Trophy className="h-3 w-3 mr-1" />
                             {cert.provider}
                           </Badge>
+                          
+                          <p className="text-gray-300 dark:text-gray-300 light:text-gray-700">{cert.description}</p>
                           {cert.link && (
                             <a
                               href={cert.link}
@@ -119,7 +121,6 @@ export default function CertificationSection() {
                               View Publication →
                             </a>
                           )}
-                          <p className="text-gray-300 dark:text-gray-300 light:text-gray-700">{cert.description}</p>
                         </div>
                       </div>
                     </CardContent>
