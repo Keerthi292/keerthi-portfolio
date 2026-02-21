@@ -86,7 +86,7 @@ const projects = [
     icon: Brain,
     gradient: "from-pink-400 to-orange-400",
     featured: true,
-    demoUrl: "https://ai-code-review-tool.streamlit.app/",
+    demoUrl: "",
     githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
   },
   {
@@ -116,7 +116,7 @@ const projects = [
   icon: Bot,
   gradient: "from-blue-400 to-purple-500",
   featured: true,
-  demoUrl: "",
+  demoUrl: "https://ai-code-review-tool.streamlit.app/",
   githubUrl: "https://github.com/Keerthi292/Ai-Powered-Code-Review-Tool"
 },
 ]
