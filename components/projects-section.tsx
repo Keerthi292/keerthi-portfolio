@@ -68,7 +68,7 @@ const projects = [
     githubUrl: "https://github.com/Keerthi292/Little-Champs",
   },
   {
-    title: "Multimodal Emotion Recognition Using AI",
+    title: "Real-time Emotion Detection for job interviews Using AI Models",
     period: "June 2025",
     description:
       "Designed an AI system to detect human emotions using text, audio, and visual inputs (multimodal analysis)",
@@ -86,7 +86,7 @@ const projects = [
     gradient: "from-pink-400 to-orange-400",
     featured: true,
     demoUrl: "",
-    githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection.git",
+    githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
   },
 ]
 
