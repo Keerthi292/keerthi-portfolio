@@ -150,7 +150,7 @@ export default function ProjectsSection() {
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -160,7 +160,7 @@ export default function ProjectsSection() {
                 viewport={{ once: true }}
                 className="h-full"
               >
-                <Card className="min-h-[800px] h-full bg-black/20 dark:bg-black/30 light:bg-pink-50/80 light:shadow-xl light:shadow-pink-200/20 backdrop-blur-xl border border-white/10 dark:border-white/20 light:border-pink-300/30 hover:border-orange-400/50 dark:hover:border-orange-400/50 light:hover:border-pink-400/50 hover:shadow-2xl hover:shadow-orange-500/10 dark:hover:shadow-orange-500/10 light:hover:shadow-pink-300/30 transition-all duration-500 group hover:scale-105 overflow-hidden flex flex-col">
+                <Card className="h-full bg-black/20 dark:bg-black/30 light:bg-pink-50/80 light:shadow-xl light:shadow-pink-200/20 backdrop-blur-xl border border-white/10 dark:border-white/20 light:border-pink-300/30 hover:border-orange-400/50 dark:hover:border-orange-400/50 light:hover:border-pink-400/50 hover:shadow-2xl hover:shadow-orange-500/10 dark:hover:shadow-orange-500/10 light:hover:shadow-pink-300/30 transition-all duration-500 group hover:scale-105 overflow-hidden flex flex-col">
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <div className="aspect-video relative">
@@ -209,14 +209,14 @@ export default function ProjectsSection() {
                   </div>
 
                   <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
                       <div className="flex items-center">
                         <motion.div whileHover={{ rotate: 360, scale: 1.1 }} transition={{ duration: 0.5 }}>
                           <project.icon
                             className={`h-6 w-6 mr-3 bg-gradient-to-r ${project.gradient} light:from-pink-600 light:to-purple-600 bg-clip-text text-transparent`}
                           />
                         </motion.div>
-                        <div className="flex items-center justify-between w-full">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2">
                           <CardTitle
                             className={`text-xl bg-gradient-to-r ${project.gradient} light:from-pink-600 light:to-purple-600 group-hover:from-orange-400 group-hover:to-pink-400 light:group-hover:from-pink-700 light:group-hover:to-purple-700 bg-clip-text text-transparent transition-all duration-300`}
                           >
@@ -278,7 +278,7 @@ export default function ProjectsSection() {
                       </div>
                     </div>
 
-                    <div className="flex gap-2">
+                    <div className="flex flex-col sm:flex-row gap-2">
                       <Button
                         asChild
                         size="sm"
