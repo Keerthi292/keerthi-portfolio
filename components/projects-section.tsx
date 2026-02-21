@@ -91,7 +91,7 @@ const projects = [
   },
   {
   title: "AI-Powered Code Review Tool",
-  period: "Aug 2025 - Sep 2025",
+  period: "Aug 2025",
   description:
     "Developed an AI-powered tool to enhance code quality and developer productivity using a dual-analysis approach that combines traditional linting with AI-based evaluation.",
   image: "assets/ai-codetool.JPG",
