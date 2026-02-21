@@ -28,6 +28,7 @@ const certifications = [
     link: "https://www.doi.org/10.56726/IRJMETS84433",
     description:
       "Multimodal AI framework integrating CNN, LSTM, and RoBERTa with attention-based fusion. Achieved 87.5% accuracy in simulated interview scenarios.",
+    certificate: "assets/IRJMETS7-realtime emotion.pdf",
 
     icon: Star,
     gradient: "from-purple-400 to-pink-400",
@@ -109,7 +110,7 @@ export default function CertificationSection() {
                             <Trophy className="h-3 w-3 mr-1" />
                             {cert.provider}
                           </Badge>
-                          
+
                           <p className="text-gray-300 dark:text-gray-300 light:text-gray-700">{cert.description}</p>
                           {cert.link && (
                             <a
@@ -119,6 +120,16 @@ export default function CertificationSection() {
                               className="text-sm text-cyan-400 hover:underline"
                             >
                               View Publication →
+                            </a>
+                          )}
+                          {cert.certificate && (
+                            <a
+                              href={cert.certificate}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-pink-400 hover:underline"
+                            >
+                              View Certificate →
                             </a>
                           )}
                         </div>
