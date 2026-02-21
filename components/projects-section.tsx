@@ -14,6 +14,7 @@ import {
   GraduationCap,
   Brain,
   Sparkles,
+  Bot,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -88,6 +89,36 @@ const projects = [
     demoUrl: "",
     githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
   },
+  {
+  title: "AI-Powered Code Review Tool",
+  period: "Aug 2025 - Sep 2025",
+  description:
+    "Developed an AI-powered tool to enhance code quality and developer productivity using a dual-analysis approach that combines traditional linting with AI-based evaluation.",
+  image: "assets/ai-codetool.JPG",
+  technologies: [
+    "Python",
+    "Streamlit",
+    "OpenAI API",
+    "JavaScript",
+    "TypeScript",
+    "Java",
+    "C/C++",
+    "HTML/CSS"
+  ],
+  features: [
+    "Integrated traditional linting techniques to detect syntax and formatting issues",
+    "Implemented AI-based evaluation to analyze code readability, efficiency, and security",
+    "Provided context-aware suggestions for improving overall code quality",
+    "Supported multiple programming languages including Python, JavaScript, Java, C/C++, TypeScript, and HTML/CSS",
+    "Built an interactive UI using Streamlit for real-time code analysis",
+    "Used OpenAI API for intelligent code review and feedback generation"
+  ],
+  icon: Bot,
+  gradient: "from-blue-400 to-purple-500",
+  featured: true,
+  demoUrl: "",
+  githubUrl: ""
+},
 ]
 
 export default function ProjectsSection() {
