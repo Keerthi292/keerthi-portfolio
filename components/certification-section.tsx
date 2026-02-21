@@ -121,7 +121,7 @@ export default function CertificationSection() {
                             >
                               View Publication →
                             </a>
-                          )}
+                          )} <br />
                           {cert.certificate && (
                             <a
                               href={cert.certificate}
