@@ -36,23 +36,6 @@ const projects = [
     githubUrl: "",
   },
   {
-    title: "E-Commerce Website",
-    period: "April 2025",
-    description: "Developed a full-stack e-commerce web app with product listing, cart, and admin management features",
-    image: "/assets/ecommerce.jpg",
-    technologies: ["React JS", "Node.js", "MongoDB"],
-    features: [
-      "Implemented React JS for frontend with responsive design",
-      "Built Node.js backend for API management",
-      "Used MongoDB for product data storage",
-      "Enabled user-friendly product browsing and admin-side product control",
-    ],
-    icon: ShoppingCart,
-    gradient: "from-green-400 to-emerald-400",
-    demoUrl: "",
-    githubUrl: "",
-  },
-  {
     title: "Little Champs Preschool Website",
     period: "April 2025",
     description: "Designed and developed a responsive, dynamic-page preschool website using React JS",
@@ -67,27 +50,6 @@ const projects = [
     gradient: "from-purple-400 to-pink-400",
     demoUrl: "https://littlechampsgurukulam.netlify.app",
     githubUrl: "https://github.com/Keerthi292/Little-Champs",
-  },
-  {
-    title: "Real-time Emotion Detection for job interviews Using AI Models",
-    period: "June 2025",
-    description:
-      "Designed an AI system to detect human emotions using text, audio, and visual inputs (multimodal analysis)",
-    image: "/assets/Emotiondetection.jpg",
-    technologies: ["Python", "Flask", "React JS", "BERT", "Wav2Vec 2.0", "DeepFace", "MongoDB"],
-    features: [
-      "Integrated BERT for text sentiment analysis",
-      "Used Wav2Vec 2.0 for speech emotion recognition",
-      "Implemented DeepFace for facial expression analysis",
-      "Combined predictions to improve accuracy in real-time emotion recognition",
-      "Used libraries like Transformers, Librosa, and OpenCV",
-      "MongoDB for storing analysis data",
-    ],
-    icon: Brain,
-    gradient: "from-pink-400 to-orange-400",
-    featured: true,
-    demoUrl: "",
-    githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
   },
   {
   title: "AI-Powered Code Review Tool",
@@ -119,6 +81,44 @@ const projects = [
   demoUrl: "https://ai-code-review-tool.streamlit.app/",
   githubUrl: "https://github.com/Keerthi292/Ai-Powered-Code-Review-Tool"
 },
+  {
+    title: "E-Commerce Website",
+    period: "April 2025",
+    description: "Developed a full-stack e-commerce web app with product listing, cart, and admin management features",
+    image: "/assets/ecommerce.jpg",
+    technologies: ["React JS", "Node.js", "MongoDB"],
+    features: [
+      "Implemented React JS for frontend with responsive design",
+      "Built Node.js backend for API management",
+      "Used MongoDB for product data storage",
+      "Enabled user-friendly product browsing and admin-side product control",
+    ],
+    icon: ShoppingCart,
+    gradient: "from-green-400 to-emerald-400",
+    demoUrl: "",
+    githubUrl: "",
+  },
+  {
+    title: "Real-time Emotion Detection for job interviews Using AI Models",
+    period: "June 2025",
+    description:
+      "Designed an AI system to detect human emotions using text, audio, and visual inputs (multimodal analysis)",
+    image: "/assets/Emotiondetection.jpg",
+    technologies: ["Python", "Flask", "React JS", "BERT", "Wav2Vec 2.0", "DeepFace", "MongoDB"],
+    features: [
+      "Integrated BERT for text sentiment analysis",
+      "Used Wav2Vec 2.0 for speech emotion recognition",
+      "Implemented DeepFace for facial expression analysis",
+      "Combined predictions to improve accuracy in real-time emotion recognition",
+      "Used libraries like Transformers, Librosa, and OpenCV",
+      "MongoDB for storing analysis data",
+    ],
+    icon: Brain,
+    gradient: "from-pink-400 to-orange-400",
+    featured: true,
+    demoUrl: "",
+    githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
+  },
 ]
 
 export default function ProjectsSection() {
