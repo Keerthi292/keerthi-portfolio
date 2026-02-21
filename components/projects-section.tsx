@@ -17,10 +17,10 @@ import {
   Bot,
 } from "lucide-react"
 import Image from "next/image"
-import { Certificate } from "crypto"
+// import { Certificate } from "crypto"
 
 const projects = [
- 
+
   {
     title: "Little Champs Preschool Website",
     period: "April 2025",
@@ -38,35 +38,35 @@ const projects = [
     githubUrl: "https://github.com/Keerthi292/Little-Champs",
   },
   {
-  title: "AI-Powered Code Review Tool",
-  period: "Aug 2025",
-  description:
-    "Developed an AI-powered tool to enhance code quality and developer productivity using a dual-analysis approach that combines traditional linting with AI-based evaluation.",
-  image: "assets/ai-codetool.JPG",
-  technologies: [
-    "Python",
-    "Streamlit",
-    "OpenAI API",
-    "JavaScript",
-    "TypeScript",
-    "Java",
-    "C/C++",
-    "HTML/CSS"
-  ],
-  features: [
-    "Integrated traditional linting techniques to detect syntax and formatting issues",
-    "Implemented AI-based evaluation to analyze code readability, efficiency, and security",
-    "Provided context-aware suggestions for improving overall code quality",
-    "Supported multiple programming languages including Python, JavaScript, Java, C/C++, TypeScript, and HTML/CSS",
-    "Built an interactive UI using Streamlit for real-time code analysis",
-    "Used OpenAI API for intelligent code review and feedback generation"
-  ],
-  icon: Bot,
-  gradient: "from-blue-400 to-purple-500",
-  featured: true,
-  demoUrl: "https://ai-code-review-tool.streamlit.app/",
-  githubUrl: "https://github.com/Keerthi292/Ai-Powered-Code-Review-Tool"
-},
+    title: "AI-Powered Code Review Tool",
+    period: "Aug 2025",
+    description:
+      "Developed an AI-powered tool to enhance code quality and developer productivity using a dual-analysis approach that combines traditional linting with AI-based evaluation.",
+    image: "assets/ai-codetool.JPG",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "OpenAI API",
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "C/C++",
+      "HTML/CSS"
+    ],
+    features: [
+      "Integrated traditional linting techniques to detect syntax and formatting issues",
+      "Implemented AI-based evaluation to analyze code readability, efficiency, and security",
+      "Provided context-aware suggestions for improving overall code quality",
+      "Supported multiple programming languages including Python, JavaScript, Java, C/C++, TypeScript, and HTML/CSS",
+      "Built an interactive UI using Streamlit for real-time code analysis",
+      "Used OpenAI API for intelligent code review and feedback generation"
+    ],
+    icon: Bot,
+    gradient: "from-blue-400 to-purple-500",
+    featured: true,
+    demoUrl: "https://ai-code-review-tool.streamlit.app/",
+    githubUrl: "https://github.com/Keerthi292/Ai-Powered-Code-Review-Tool"
+  },
   {
     title: "E-Commerce Website",
     period: "April 2025",
@@ -99,14 +99,14 @@ const projects = [
       "Used libraries like Transformers, Librosa, and OpenCV",
       "MongoDB for storing analysis data",
     ],
-    Certificate:"assets/IRJMETS7-realtime emotion.pdf",
+    certificateUrl: "/assets/IRJMETS7-realtime emotion.pdf",
     icon: Brain,
     gradient: "from-pink-400 to-orange-400",
     featured: true,
     demoUrl: "",
     githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
   },
-   {
+  {
     title: "Marine Transport System",
     period: "2022-2023",
     description:
@@ -188,9 +188,8 @@ export default function ProjectsSection() {
                           asChild
                           size="sm"
                           disabled={!project.demoUrl}
-                          className={`bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 dark:from-orange-500 dark:to-pink-500 light:from-pink-500 light:to-purple-500 border-0 shadow-lg ${
-                            !project.demoUrl ? "opacity-50 cursor-not-allowed" : ""
-                          }`}
+                          className={`bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 dark:from-orange-500 dark:to-pink-500 light:from-pink-500 light:to-purple-500 border-0 shadow-lg ${!project.demoUrl ? "opacity-50 cursor-not-allowed" : ""
+                            }`}
                         >
                           <a
                             href={project.demoUrl || "#"}
@@ -258,7 +257,7 @@ export default function ProjectsSection() {
                             </li>
                           ))}
                         </ul>
-                        
+
                       </div>
 
                       <div className="mb-6">
@@ -295,9 +294,8 @@ export default function ProjectsSection() {
                         asChild
                         size="sm"
                         disabled={!project.demoUrl}
-                        className={`flex-1 bg-gradient-to-r ${project.gradient} hover:opacity-90 dark:${project.gradient} light:from-pink-500 light:to-purple-500 border-0 transition-all duration-300 ${
-                          !project.demoUrl ? "opacity-50 cursor-not-allowed" : ""
-                        }`}
+                        className={`flex-1 bg-gradient-to-r ${project.gradient} hover:opacity-90 dark:${project.gradient} light:from-pink-500 light:to-purple-500 border-0 transition-all duration-300 ${!project.demoUrl ? "opacity-50 cursor-not-allowed" : ""
+                          }`}
                       >
                         <a
                           href={project.demoUrl || "#"}
@@ -311,6 +309,22 @@ export default function ProjectsSection() {
                           Live Demo
                         </a>
                       </Button>
+                      {project.certificateUrl && (
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="outline"
+                          className="flex-1 border-yellow-400/40 bg-transparent hover:bg-yellow-400/10 hover:border-yellow-400/70 transition-all duration-300"
+                        >
+                          <a
+                            href={project.certificateUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            📜 View Certificate
+                          </a>
+                        </Button>
+                      )}
 
                     </div>
                   </CardContent>
