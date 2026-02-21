@@ -17,6 +17,7 @@ import {
   Bot,
 } from "lucide-react"
 import Image from "next/image"
+import { Certificate } from "crypto"
 
 const projects = [
  
@@ -98,6 +99,7 @@ const projects = [
       "Used libraries like Transformers, Librosa, and OpenCV",
       "MongoDB for storing analysis data",
     ],
+    Certificate:"assets/IRJMETS7-realtime emotion.pdf",
     icon: Brain,
     gradient: "from-pink-400 to-orange-400",
     featured: true,
@@ -256,6 +258,7 @@ export default function ProjectsSection() {
                             </li>
                           ))}
                         </ul>
+                        
                       </div>
 
                       <div className="mb-6">
