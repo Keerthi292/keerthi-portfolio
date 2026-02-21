@@ -86,7 +86,7 @@ const projects = [
     gradient: "from-pink-400 to-orange-400",
     featured: true,
     demoUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection.git",
   },
 ]
 
