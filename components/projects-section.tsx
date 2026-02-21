@@ -19,22 +19,7 @@ import {
 import Image from "next/image"
 
 const projects = [
-  {
-    title: "Marine Transport System",
-    period: "2022-2023",
-    description:
-      "Developed a desktop-based system to manage marine transport operations such as scheduling, booking, and route tracking",
-    image: "/assets/marine.jpg",
-    technologies: ["VB.NET", "Microsoft SQL Server"],
-    features: [
-      "Built user interface using VB.NET for smooth and interactive experience",
-      "Used Microsoft SQL Server for storing transport records, schedules, and user data securely",
-    ],
-    icon: Ship,
-    gradient: "from-blue-400 to-cyan-400",
-    demoUrl: "",
-    githubUrl: "",
-  },
+ 
   {
     title: "Little Champs Preschool Website",
     period: "April 2025",
@@ -118,6 +103,22 @@ const projects = [
     featured: true,
     demoUrl: "",
     githubUrl: "https://github.com/Keerthi292/Real-time-Emotion-Detection",
+  },
+   {
+    title: "Marine Transport System",
+    period: "2022-2023",
+    description:
+      "Developed a desktop-based system to manage marine transport operations such as scheduling, booking, and route tracking",
+    image: "/assets/marine.jpg",
+    technologies: ["VB.NET", "Microsoft SQL Server"],
+    features: [
+      "Built user interface using VB.NET for smooth and interactive experience",
+      "Used Microsoft SQL Server for storing transport records, schedules, and user data securely",
+    ],
+    icon: Ship,
+    gradient: "from-blue-400 to-cyan-400",
+    demoUrl: "",
+    githubUrl: "",
   },
 ]
 
