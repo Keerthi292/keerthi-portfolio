@@ -23,15 +23,15 @@ const certifications = [
     gradient: "from-green-400 to-emerald-400",
   },
   {
-  title: "Real-Time Emotion Detection for Job Interviews Using AI Models",
-  provider: "IRJMETS – Vol 07, Issue 11, Nov 2025",
-  link: "https://www.doi.org/10.56726/IRJMETS84433",
-  description:
-    "Multimodal AI framework integrating CNN, LSTM, and RoBERTa with attention-based fusion. Achieved 87.5% accuracy in simulated interview scenarios.",
-  
-  icon: Star,
-  gradient: "from-purple-400 to-pink-400",
-},
+    title: "Real-Time Emotion Detection for Job Interviews Using AI Models",
+    provider: "IRJMETS – Vol 07, Issue 11, Nov 2025",
+    link: "https://www.doi.org/10.56726/IRJMETS84433",
+    description:
+      "Multimodal AI framework integrating CNN, LSTM, and RoBERTa with attention-based fusion. Achieved 87.5% accuracy in simulated interview scenarios.",
+
+    icon: Star,
+    gradient: "from-purple-400 to-pink-400",
+  },
 ]
 
 const languages = [
@@ -72,7 +72,7 @@ export default function CertificationSection() {
               viewport={{ once: true }}
               className="text-2xl font-bold text-center mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
             >
-               Certifications and Publication
+              Certifications and Publication
             </motion.h3>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -109,6 +109,16 @@ export default function CertificationSection() {
                             <Trophy className="h-3 w-3 mr-1" />
                             {cert.provider}
                           </Badge>
+                          {cert.link && (
+                            <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-cyan-400 hover:underline"
+                            >
+                              View Publication →
+                            </a>
+                          )}
                           <p className="text-gray-300 dark:text-gray-300 light:text-gray-700">{cert.description}</p>
                         </div>
                       </div>
@@ -155,7 +165,7 @@ export default function CertificationSection() {
                       >
                         {lang.name}
                       </div>
-                      
+
                     </motion.div>
                   ))}
                 </div>
