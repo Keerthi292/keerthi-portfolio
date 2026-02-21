@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Keerthi N - Portfolio',
+    default: 'Keerthi N-Portfolio',
     template: '%s | Keerthi N',
   },
   description: 'Portfolio of Keerthi',
