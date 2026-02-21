@@ -25,9 +25,10 @@ const certifications = [
   {
   title: "Real-Time Emotion Detection for Job Interviews Using AI Models",
   provider: "IRJMETS – Vol 07, Issue 11, Nov 2025",
+  link: "https://www.doi.org/10.56726/IRJMETS84433",
   description:
     "Multimodal AI framework integrating CNN, LSTM, and RoBERTa with attention-based fusion. Achieved 87.5% accuracy in simulated interview scenarios.",
-  link: "https://www.doi.org/10.56726/IRJMETS84433",
+  
   icon: Star,
   gradient: "from-purple-400 to-pink-400",
 },
