@@ -117,7 +117,7 @@ const projects = [
   gradient: "from-blue-400 to-purple-500",
   featured: true,
   demoUrl: "",
-  githubUrl: ""
+  githubUrl: "https://github.com/Keerthi292/Ai-Powered-Code-Review-Tool"
 },
 ]
 
